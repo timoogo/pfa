@@ -110,9 +110,7 @@ input[type="submit"] {
 
 
 @media (min-width: 48em) {
-    form{
-        width: 90% !important;
-    }
+
     input[type="submit"] {
         text-transform: uppercase;
         border-radius: 15px;
@@ -123,17 +121,3 @@ input[type="submit"] {
         color: #fff;
     }
 }
-    @media (min-width:20em){
-        form{
-            width: 90% !important;
-        }
-        input[type="submit"] {
-            text-transform: uppercase;
-            border-radius: 15px;
-            background-color: var(--cta_color);
-            border-style: none;
-            width: 70%;
-            height: 60px;
-            color: #fff;
-    }
-    }
