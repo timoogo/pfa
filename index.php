@@ -84,7 +84,7 @@
                </div>
             </section>
             <section id="fun_facts">
-               <h2><?= $arr_names[$randIndex[0]]; ?></h2>
+               <h2>Fun fact</h2>
                <div class="fact">
                   <div class="the_fact" id="fact_1">
                      <p> <?= $arr_names[$randIndex[0]]; ?> </p>
@@ -96,3 +96,4 @@
       </div>
       
       <?php require('inc/footer.inc.php'); ?>
+</div>
