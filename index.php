@@ -8,8 +8,13 @@
       <div class="container">
       <?php require('inc/head.inc.php'); ?>
          <div id="content">
+   
             <section id="first_screen">
+          
                <div class="left">
+             <div class="title">
+             <h1>Un site qui vous présentera cartman et ses amis ! </h1>
+             </div>
                   <h2> <?= $cartman; ?> </h2>
                   <p> <?= $cartman_content ?></p>
                   <a href="#random_extract" class="cta">voir l'extrait random</a>

@@ -11,7 +11,6 @@
         <li> <a href="contact.php">Contact</a></li>
         <li> <a href="admin.php">Espace admin</a></li>
         <li> <a href="blog.php">Blog</a></li>
-        <li> <a href="copyright.php">Mentions légales</a></li>
 
     </ul>
 
