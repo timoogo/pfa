@@ -5,7 +5,7 @@
 
 
 <h1 style="text-align:center">MENTIONS LEGALES :</h1>
-
+<h2>Site Web créé dans la cadre d'un projet scolaire"</h2>
 <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : <a href="http://www.ateliertimogo.com" target="_blank">www.ateliertimogo.com</a> les informations suivantes :</p>
 
 <h2>1. Informations légales :</h2>

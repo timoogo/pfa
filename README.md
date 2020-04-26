@@ -7,41 +7,29 @@ La série met en scène les aventures de quatre enfants d'école primaire : Stan
 https://fr.wikipedia.org/wiki/South_Park -
 [Wikipedia](https://fr.wikipedia.org/)
 
-## Contraintes: Interdiction d’utiliser un CMS ou un Template. 
-Chaque étudiant doit obligatoirement remplir les Fonctionnalités principales du projet qui seront évaluées durant le dernier cours de développement Web.
-Les Fonctionnalités secondaires sont proposées pour marquer plus de points mais elles sont obligatoires pour les
-étudiants souhaitant intégrer l’axe développement Web en A2
-
-## Fonctionalités 
-
-### Principales :
-❑ Page d'accueil avec la présentation du personnage
-❑ Site Web responsive (avec menu burger)
-❑ Page mentions légales avec la mention "Site Web
-créé dans la cadre d'un projet scolaire"
-❑ Utilisation d'images libres de droit
-❑ Intégration d'animations en CSS
-❑ Intégration d'animations en Javascript
-❑ Création d'une page contact avec un formulaire de
-contact permettant d'envoyer un e-mail
-❑ Création d'un slider / slideshow de 3 images
 
 
-### Secondaires : ❑ Supprimer les répétitions de code HTML dans les différentes pages via
-le PHP
-❑ Création d'un espace d’administration (base de données en backoffice) protégé par login et mot de passe
-❑ Listing des différentes demandes de contact dans le back-office
-❑ Créer un onglet "blog" avec l'ajout d'un article possible via un backoffice :
-❑ Création d'un titre
-❑ Intégration d'une zone de texte WYSIWYG
-❑ Ajout d'une image principale
-❑ Code source respectueux des standards :
-❑ Validé W3C
-❑ Indenté
-❑ Commenté
-❑ Intégrer d'éléments visuels supplémentaires :
-❑ Favicon
-❑ Logo
-❑ Typographie et iconographie
-❑ Créer un onglet "galerie d'images" avec l'ajout d'images
-possible via un back-office
+### Principales features :
+❑ Responsive design
+
+❑ Animation css (cartman #first_screen, carrousel zoom-in/out)
+
+❑ Animation js via Slick (Carrousel)
+
+❑  Contact
+
+Envoi de mail via SMTP Gmail et PHPMailer (nécessite de définir 
+la variable d'environnement MAIL_SMTP_PWD)  
+
+❑ Animation Tracking de la souris 
+
+- Inspiré de Frozen Brush: openprocessing.org/sketch/413567
+- Utilisation de la librairie P5.js 
+- Le canvas sur lequel se dessine l'animation de la souris suit la position courante de l'utilisateur 
+- Scripts utilisés définis dans tracker.php et sont inclus dans le header pour être chargés dès le début du chargement des pages
+  
+❑  Extraits vidéos random
+
+ La structures des extraits est définit dans variables.php ainsi que le fonctionnement du sélecteur d'un extrait random
+
+ ### La section #fun_facts est en cours de développment et fonctionnera comme les extraits de video random

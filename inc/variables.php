@@ -18,28 +18,20 @@ $stan_content = "Il est le plus clairvoyant et le moins crédule de la bande ave
 $kyle = "Kyle Broflovski";
 $kyle_content = "$kyle passe le plus clair de son temps avec ses trois camarades de classe $sm, $$km et $ec à jouer ou essayer de se tirer de situations compliquées ou dangereuses. Une amitié forte l'unit à $sm,";
 
-
-
 $butters = "Butters Stotch";
 $butters_content = "$butters,bien qu'il ne fasse pas partie de la bande des quatres,  il est considéré comme l'un des personnages principaux de la série. C'est sûrement dû au fait qu'il fut le remplaçant de $km lors d'une partie de la saison six.Il mène une 'double-vie' en tant que le 'Professeur Chaos'. Il s'est mit en tête de détruire ,avec son compagnon, le Général Désolation, le monde car Kyle, Cartman et sm l'ont viré du groupe. Il pense faire un acte criminel infâme en échangeant 2 assiettes de soupe, par exemple... ";
 
 
-//___________________________________________________________fin nom et desccription___________________________________________________
+//___________________________________________________________fin nom et description___________________________________________________
 
 //_______________________________________________________________randomizer___________________________________________________
 
 $random_extract_description = "Jimmy et Timmy vont participer aux Jeux olympiques pour handicapés. Jimmy a très envie de gagner et n'hésite pas à prendre des stéroïdes. De son côté, Cartman apprend qu'un prix de mille dollars sera remis au meilleur athlète des Jeux. Il veut se faire passer pour un handicapé pour remporter le prix...";
 $random_fact_description = "kako";
-$t = "123";
 
 
 $arr_names = array("$ec", "$km", "$sm", "$butters");
 
-
-
-
-
-//essaye tableau
 
 $extracts_array = array(
     array(
@@ -79,7 +71,7 @@ function RandomExtract(array $myArray){
     $randomIndex= array_rand($myArray);
     return $myArray[$randomIndex];
 }
-//fin test
+
 
 
 
