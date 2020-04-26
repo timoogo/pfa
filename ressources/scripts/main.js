@@ -28,11 +28,11 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     arrows: true,
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 2500,      
                     slidesToScroll: 1,
                     infinite: true,
@@ -43,7 +43,7 @@ $(document).ready(() => {
         ]
     });
 
-    $(document).ready(function(){
+  
         $('.fact').slick({
             dots: true,
             infinite: true,
@@ -51,5 +51,7 @@ $(document).ready(() => {
             fade: true,
             cssEase: 'linear',
         });
-     });
+ 
+ 
 });
+

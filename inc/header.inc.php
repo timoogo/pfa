@@ -16,5 +16,11 @@
 
 </header>
 
+<script>        
+    function reload_extract(){
+         $( "#random_extract_container" ).load(window.location.href + " #random_extract_container" );
+        }
+</script>
+
 <body>
     <?php include 'inc/tracker.php'; ?>

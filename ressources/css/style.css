@@ -94,7 +94,7 @@ header .menu_burger {
   }
   
   header .menu-icon .navicon {
-    background: #333;
+    background: var(--cta_color);
     display: block;
     height: 2px;
     position: relative;
@@ -104,7 +104,7 @@ header .menu_burger {
   
   header .menu-icon .navicon:before,
   header .menu-icon .navicon:after {
-    background: #333;
+    background: var(--cta_color);
     content: '';
     display: block;
     height: 100%;
@@ -448,7 +448,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
  /* destop only
  enlever le menu burger
  */
-@media (min-width: 48em) {
+@media (min-width: 48.1em) {
     header li {
       float: left;
     }
@@ -467,6 +467,81 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
 
 
 /* media query tablette */
+@media(min-width: 500px) and (max-width: 768px) {
+    body {
+        background-color: var(--black_color);
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    header{
+        top: 0;
+    }
+    .title h1{
+        bottom: 10px;
+    }
+    
+    label.menu-icon {
+        position: relative;
+        left: 45%;
+    }
+    
+    #content>#first_screen {
+        display: block;
+        height: 100%;
+        margin: auto;
+    }
+    section#first_screen .left
+    {
+        position: relative;
+        top: 20%;
+        height: fit-content;
+        width: 75%;
+        margin-bottom: 20vh;
+        margin: 0px auto;        
+    }
+    section#first_screen .left a{
+ width: 65%;
+
+    }
+    section#first_screen .right{
+        width: 60%;
+        height: fit-content;
+        position: relative;
+        top: 150px!important;
+        display: block;
+        margin: auto;    
+    }
+ 
+    section#first_screen div.right img#sad_cartman {
+        transform: rotate(7deg);
+        width: 100%;
+        border-radius: 105px;
+              
+    }
+    section#first_screen div.right img#sad_cartman:hover{
+        transform: rotate(0deg);
+    }
+
+
+
+    #random_extract_container {
+        display: block;
+       
+        width: 100%;
+        margin: auto;
+    }
+    #video-container video{
+        width: 100%;
+    }
+    #random_extract .left{
+        margin: 0;
+    }
+
+   
+}
+
+
 @media(min-width: 768px) and (max-width: 1388px) {
     body {
         background-color: var(--black_color);
@@ -474,11 +549,19 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
         overflow-x: hidden;
         box-sizing: border-box;
     }
+    header{top: 0;}
+    .title {
+        width: 80vw;
+        margin: auto;
+    }
     
- 
+    label.menu-icon {
+        position: relative;
+        left: 45%;
+    }
     
-    #content>#first_screen {
-        display: flex;
+    /* #content>#first_screen {
+        display: block;
         height: 130vh;
         margin: auto;
         justify-content: space-between;
@@ -490,7 +573,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
         top: 15%;
         height: fit-content;
     }
-    
+ 
     section#first_screen div.right img#sad_cartman {
         border-radius: 105px;
         transform: rotate(7deg);
@@ -499,11 +582,64 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
         top: 210px;
         right: 85px;
         
+    } */
+    #content>#first_screen {
+        display: block;
+        height: 100%;
+        margin: auto;
+        justify-content: space-between;
     }
-   
+    section#first_screen .left
+    {
+        position: relative;
+        top: 10%;
+        height: fit-content;
+        width: 75%;
+        margin-bottom: 20vh;
+       
+        
+    }
+    section#first_screen .left a{
+        position: relative;
+        left: 25%;
+
+    }
+    section#first_screen .right{
+   width: 40%;
+   height: fit-content;
+   position: relative;
+   top: 0 !important;
+   display: block;
+    margin: auto;
+    }
+ 
+    section#first_screen div.right img#sad_cartman {
+        border-radius: 105px;
+        transform: rotate(7deg);
+        width: 100%;
+        border-radius: 105px;
+              
+    }
+    section#first_screen div.right img#sad_cartman:hover{
+        transform: rotate(0deg);
+    }
+
+
+
+    #random_extract_container {
+        display: block;
+       
+        width: 100%;
+        margin: auto;
+    }
+    #video-container video{
+        width: 100%;
+    }
+    #random_extract .left{
+        margin: 0;
+    }
+
 }
-
-
 
 
   

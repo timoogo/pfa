@@ -4,7 +4,7 @@
    include 'inc/variables.php';
    ?>
    <main>
-  
+     
       <div class="container">
       <?php require('inc/head.inc.php'); ?>
          <div id="content">
@@ -66,20 +66,20 @@
             <section id="random_extract">
                <h2>L'EXTRAIT RANDOM </h2>
                <div id="random_extract_container">
+                  
                   <div class="left">
                      <div id="video-container">
                         <!-- Video -->
-                        <video id="video" width="720" height="480" autoplay="true" controls>
-                           <audio src="ressources/medias/videos/Dorohedoro_02.mp4"></audio>
-                           <source src="ressources/medias/videos/Dorohedoro_02.mp4" type="video/mp4">
-                           <?= $video_err;?>
-                        </video>
+                        <?php $myrdmextract= RandomExtract($extracts_array);?>
+                    
+                        <iframe width="560" height="315" src="<?=$myrdmextract['url']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        <pre style:"color: white"><?php echo $myrdmextract?></pre>
                      </div>
                   </div>
                   <div class="right">
-                     <h3><?=  $cartman;?></h3>
-                     <p> <?=$lorem; ?>  </p>
-                     <button type="button" class="cta">voir un autre extrait</button>
+                     <h3><?=$myrdmextract['titre']?></h3>
+                     <p> <?=$myrdmextract['description']?>  </p>
+                     <button type="button" onclick="reload_extract()" class="cta">voir un autre extrait</button>
                   </div>
                </div>
             </section>
@@ -87,7 +87,7 @@
                <h2>Fun fact</h2>
                <div class="fact">
                   <div class="the_fact" id="fact_1">
-                     <p> <?= $arr_names[$randIndex[0]]; ?> </p>
+                     <p> <?= RandomExtract($arr_names); ?> </p>
                   </div>
                
                </div>
