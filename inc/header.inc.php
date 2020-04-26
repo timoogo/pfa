@@ -6,12 +6,10 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"> </span> </label>
     <ul class="menu_burger">
-
         <li> <a href="index.php">Accueil</a></li>
         <li> <a href="contact.php">Contact</a></li>
         <li> <a href="admin.php">Espace admin</a></li>
         <li> <a href="blog.php">Blog</a></li>
-
     </ul>
 
 </header>
