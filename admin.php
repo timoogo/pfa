@@ -9,7 +9,7 @@
 
 
 <section>
-    <?= $wip; ?>
+
 </section>
         
  <?php
