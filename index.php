@@ -1,6 +1,8 @@
 <!-- php -S 127.0.0.1:5500 -->
 <!-- start http://127.0.0.1:5500 -->
-<?php include_once('inc/header.inc.php');
+<?php
+include_once('inc/header.inc.php');
+include_once('inc/head.inc.php');
    include 'inc/variables.php';
    ?>
    <main>
