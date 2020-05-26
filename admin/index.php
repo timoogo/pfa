@@ -1,7 +1,7 @@
 <!-- CETTE PAGE GERE LA CONNEXION APRES LE FORM DE @CONNEXION.PHP -->
 
 <header>
-    <link rel="stylesheet" href="ressources/css/admin.css?v=n">
+    <link rel="stylesheet" href="ressources/css/admin.css">
 </header>
 
 

@@ -2,28 +2,22 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<div class=theUser>
-    <a href="<?= 'show.php?id=' . $user['id'] ?>">
-    <td> <?=$user["id"]?></td>
-        <?= $user["user_login"] ?>
-    </a>
-    <?php
 
-//     echo "<td><a class=\"alert\" href=\"delete.php?id=" . $user['id'] . "\">x
-       
+<tr>
+    <td> <?= $user["id"] ?></td>
+    <td>
+    <a href="<?= 'show.php?id=' . $user['id'] ?>"><?= $user["user_login"] ?></a>
+    </td>
+    <td>
+        <a href="<?= 'edit.php?id=' . $user['id'] ?>">update</a>
+        <button onclick="confirmDelete()">delete</button>
+    </td>
+</tr>
 
-//     <div class=\"myImage\">
-//        <img src=\"../../ressources/medias/images/confirm.gif\"  />
-//     </div>
-      
-//     </a>
-// </div>
-// </a>
-// </td>";
-
-?>
-     <style>
-         div.myImage {
-             display: none;
-         }
-     </style>
+<script>
+function confirmDelete() {
+  if (confirm("Voulez vous vraiment supprimer ce user ?")) {
+    window.location.href = 'delete.php?id=<?= $user['id']; ?>';
+  }
+}
+</script>

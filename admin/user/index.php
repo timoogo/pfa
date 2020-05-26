@@ -24,7 +24,6 @@ if(empty($_SESSION['user']))
 <!-- <h2>Si vous voulez accéder aux détails d'un utilisateur admin, cliquez sur son nom. Si vous voulez le supprimer cliquez sur "x"</h2> -->
 <?php include "list.php" ?>
 
-<h2>Si vous voulez modifier un utilisateur admin, cliquez sur son nom, vous trouverez ses infos et un formulaire pour le modifier</h2>
 
 
 <!--  -->
