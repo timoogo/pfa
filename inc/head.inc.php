@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="ressources/medias/images/cartman/cartman-dance.gif"/> <!-- a corriger plus tard -->
     <link rel="stylesheet" type="text/css" href="ressources\slick-1.8.1\slick\slick.css"><!--slick : pour le carrousel -->
     <link rel="stylesheet" type="text/css" href="ressources\slick-1.8.1\slick\slick-theme.css"> <!-- slick : pour le carrousel -->
-    <link rel="stylesheet" href="ressources/css/style.css"> <!--page de css principale -->
+    <link rel="stylesheet" href="ressources/css/style.css?v=n"> <!-- page de css principale (?v=n permet -->
 
    
     <meta name="description" content="">

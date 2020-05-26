@@ -66,10 +66,6 @@ header li a {
     padding: 20px 20px;
     text-decoration: none;
 }
-ul.menu_burger li:nth-child(3), ul.menu_burger li:nth-child(4){
-    display: none;
-}
-
 input#menu-btn {
     display: none;
 }
@@ -87,7 +83,7 @@ header .menu_burger {
   header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
+    /* float: right; */
     padding: 28px 20px;
     position: relative;
     user-select: none;

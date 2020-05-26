@@ -1,15 +1,13 @@
 <?php 
+include_once '../../inc/variables.php';
+include_once "database.php";
 
 
-$db = new PDO("mysql:host=localhost;dbname=southpark;charset=utf8", "root", "");
 
 $db-> query("
-      CREATE TABLE IF NOT EXISTS users(
+      CREATE TABLE IF NOT EXISTS a_users(
       id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-      name VARCHAR(20),
-      password VARCHAR(20)
+      user_login VARCHAR(20),
+      user_password VARCHAR(20)
     );");
-    
-$db->query("INSERT INTO users(name, password) VALUES('eric', 'cartman')");
-$db->query("INSERT INTO users(name, password) VALUES('toto2', 'tata2')");
-
+  insertUser($DEFAULT_DB_ADMIN,$DEFAULT_DB_PWD);

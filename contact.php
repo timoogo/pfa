@@ -54,6 +54,12 @@ if (isset($_POST['send'])) {
                     if($email->send()) {
                         error_log("envoyé", 0);
                         $display = "<div class='success'> L'email a été envoyé à ".$_POST['email']." </div>" ;
+                      // on enregistre dans la db la demande
+                        $db = new PDO($DB_URI, $DB_USER, "");
+                        $data = $db->prepare("INSERT INTO contact_info(contact_email_adress) VALUES (?);");
+                        $data->execute(array($_POST["email"]));
+            
+                        
                     }else{
                         error_log("pas envoyé", 1);
                         $display = "<div class='error'> L'email n'a pas été envoyé </div>" ;

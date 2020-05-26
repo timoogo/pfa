@@ -2,4 +2,4 @@
 
  <?php include_once "database.php"; ?>
 
- <?php foreach (selectUsers() as $user) : include "_item.php"; endforeach; ?>
+<div class="username"> <?php foreach (selectUsers() as $user) : include "_item.php"; endforeach; ?> </div>

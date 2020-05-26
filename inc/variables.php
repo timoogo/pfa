@@ -33,16 +33,17 @@ $random_fact_description = "kako";
 $arr_names = array("$ec", "$km", "$sm", "$butters");
 
 
+
 $extracts_array = array(
     array(
         "titre" => 'Cartman -  La Passion du Juif',
 
         "description" => "Cartman convainc Kyle d'aller voir La Passion du Christ. Ce film choque tellement Kyle qu'il remet sa foi en question. Stan et Kenny quant à eux trouvent le film si nul qu'ils veulent à tout prix se faire rembourser. Cartman, lui, décide de monter une armée pour exterminer les juifs.",
-        "url" =>"https://www.youtube-nocookie.com/embed/BxuRiIbyzEY?controls=0",
+        "url" => "https://www.youtube-nocookie.com/embed/BxuRiIbyzEY?controls=0",
         "Episode :" => "114"
     ),
-  
-     array(
+
+    array(
         "titre" => 'Cartman - Les Stéroïdes, ça déchire',
 
         "description" => "Alors que les Jeux olympiques spéciaux commencent à Denver, Cartman, voyant qu'il y a de l'argent en jeu, décide de se faire passer pour un handicapé pour empocher la cagnotte. ",
@@ -56,7 +57,7 @@ $extracts_array = array(
         "url" => "https://www.youtube-nocookie.com/embed/4qf5y7AaWbU?controls=0",
         "Episode :" => "69"
     ),
-  
+
     array(
         "titre" => 'Association sportive des bébés du crack',
 
@@ -67,15 +68,26 @@ $extracts_array = array(
 );
 
 
-function RandomExtract(array $myArray){
-    $randomIndex= array_rand($myArray);
-    return $myArray[$randomIndex];
+//
+
+
+
+$DEFAULT_DB_ADMIN = "timogo";
+$DEFAULT_DB_PWD = "mdp";
+
+$DB_URI = "mysql:host=localhost;dbname=administration;charset=utf8";
+$DB_USER = "root";
+
+
+function RandomExtract($db_uri = "mysql:host=localhost;dbname=administration;charset=utf8", $db_user = "root")
+{
+    $db = new PDO($db_uri, $db_user);
+    $stmt = $db->prepare("SELECT * FROM videos ORDER BY RAND() LIMIT 1");
+    $stmt ->execute();
+    $res = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $res;
 }
-
-
-
-
-
 
 
 

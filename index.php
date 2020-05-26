@@ -72,7 +72,10 @@ include_once('inc/head.inc.php');
                   <div class="left">
                      <div id="video-container">
                         <!-- Video -->
-                        <?php $myrdmextract= RandomExtract($extracts_array);?>
+
+                        <?php $myrdmextract= RandomExtract();
+                        
+                        ?>
                     
                         <iframe width="560" height="315" src="<?=$myrdmextract['url']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         <pre style:"color: white"><?php echo $myrdmextract?></pre>
@@ -89,13 +92,13 @@ include_once('inc/head.inc.php');
                <h2>Fun fact</h2>
                <div class="fact">
                   <div class="the_fact" id="fact_1">
-                     <p> <?= RandomExtract($arr_names); ?> </p>
+               
+                
                   </div>
                
                </div>
             </section>
          </div>
       </div>
-      
       <?php require('inc/footer.inc.php'); ?>
 </div>
