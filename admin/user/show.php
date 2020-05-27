@@ -19,7 +19,7 @@ $user = selectUser($userId);
     <span> name: <?= $user["user_login"];?></span> 
     <span> id: <?= $user["id"];?> </span>
     <span> password: <?= $user["user_password"];?> </span>
-    <a href=<?php echo"update.php?id=".$user['id']."&name=".$user['user_login'] ?>>modifier les infos utilisateurs</a>
+    <a href=<?php echo"edit.php?id=".$user['id']."&name=".$user['user_login'] ?>>modifier les infos utilisateurs</a>
     <a href=<?php echo"delete.php?id=".$user['id']."&name=".$user['user_login'] ?>>supprimer l'uilisateurs</a>
     <div class="admin_index" >
         <a href=".">back to index</a>

@@ -8,7 +8,7 @@ if(empty($_SESSION['user']))
   
   exit();
 }
-$db = new PDO($DB_URI, $DB_USER, "");
+$db = new PDO($DB_URI, $DB_ADMIN, "");
 if(isset($_POST['article_titre'], $_POST['article_contenu'])){
     if(!empty ($_POST['article_titre']) AND !empty($_POST['article_contenu'])){
     

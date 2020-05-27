@@ -12,16 +12,16 @@ if (isset($_GET["action"])) {
     if ($_GET["action"] == "connexion") {
         if (isset($_POST["login"]) && isset($_POST["pass"])) {
             // On récupère les données de la bdd pour l'utilisateur $_POST['login']
-            $db = new PDO($DB_URI, $DB_USER, "");
+            $db = new PDO($DB_URI, $DB_ADMIN, "");
 
 
-            $data = $db->prepare("SELECT user_login, user_password FROM a_users WHERE user_login = ?;");
+            $data = $db->prepare("SELECT * FROM users WHERE name = ?;");
             $data->execute(array($_POST["login"]));
             $result = $data->fetch();
 
             // si contenu,   
             if ($result != false) {
-                if ($result["user_login"] === $_POST["login"] && $result["user_password"] === $_POST["pass"]) {
+                if ($result["name"] === $_POST["login"] && $result["password"] === $_POST["pass"]) {
 
 ?>
 <?php
