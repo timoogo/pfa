@@ -1,4 +1,5 @@
- <h3>list of users</h3>
+<hr>
+<h3>List of users</h3>
 
  <?php include_once "../database.php"; ?>
  <table style="width:100%">

@@ -63,6 +63,9 @@ section#first_screen .left {
     margin: 95px;
     width: 45%;
 }
+#first_screen p {
+    margin: auto auto 35px;
+}
 img#sad_cartman {
     border-radius: 105px;
     transform: rotate(7deg);

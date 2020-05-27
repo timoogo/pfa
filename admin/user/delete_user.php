@@ -11,10 +11,5 @@ include_once "../database.php";
 
 ?>
 <div id="wrapper">
-    <h1> Utilisateur supprimé ! </h1>
-    <div class="admin_index" >
-            <a href=".">back to index</a>
-        </div>
-        </div>
-        <?php 
-header('Location: .'); ?>
+    <h1> Utilisateur supprimé ! </h1> </div>
+        <?php header('Location: .'); ?>

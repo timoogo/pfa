@@ -10,13 +10,13 @@
 <div id="wrapper">
 
     <h1 id='welcome_admin'>Bienvenue dans l'espace d'administration</h1>
-    <form action="admin/index.php?action=connexion" id="connexion" method="post">
+    <form action="admin/index.php?action=connexion" method="post">
         
             <!-- <label for="login">login</label> -->
             <input type="text" placeholder="Login" name="login"/> 
             <!-- <label for="pass">pass</label> -->
             <input type="password" placeholder="Password" name="pass"/>
-            <input type="submit" value="valider"  accesskey="s">
+            <input type="submit" class="button" value="valider"  accesskey="s">
         
         
     </form>

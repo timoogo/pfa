@@ -20,7 +20,7 @@ if(empty($_SESSION['user']))
   
   <h2>Si vous voulez ajouter un utilisateur admin, remplissez les champs ci-dessous</h2>
   <?php include "new.php" ?>
-<hr>
+
 <!-- <h2>Si vous voulez accéder aux détails d'un utilisateur admin, cliquez sur son nom. Si vous voulez le supprimer cliquez sur "x"</h2> -->
 <?php include "list.php" ?>
 
@@ -30,9 +30,5 @@ if(empty($_SESSION['user']))
 <hr>
   
   
-<footer>
-<div class="admin_disconnect">
-    <a href="../logout.php"> se déconnecter </a>
-  </div>
-</footer>
+<?php include_once '../../inc/admin/footer.inc.php';?>
   </div>

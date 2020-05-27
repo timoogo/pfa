@@ -19,7 +19,7 @@
 body {
     background-color: var(--black_color);
     width: 100%;
-    overflow-x: hidden;
+     
 }
 
 .button {
@@ -29,8 +29,9 @@ body {
     border-style: none;
     color: #fff;
     text-align: center;
-    padding: 15px ;
+    padding: 20px 15px;
     cursor: pointer;
+    margin: 3px;
 }
 
 .button:hover{
@@ -54,8 +55,7 @@ h1 {
     color: #fff;
     font-size: 18pt;
     text-align: center;
-    position: relative;
-    bottom: 20vh;
+
 
 }
 
@@ -72,6 +72,7 @@ p {
 
 h3 {
     text-align: center;
+    margin: 10px auto;
 
     font-size: 25px;
 }
@@ -106,10 +107,22 @@ form.updateUserForm select{
     padding: 15px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     font-size: 18px;
     border-radius: 20px;
     margin: 8px 0px;
     padding: 4px 20px;
     height: 40px;
+}
+td, th{
+    border: 1px solid var(--cta_color);
+    color:var(--cta_color);
+}
+td{
+  text-align: center;
+  padding: 10px;
+}
+th{
+    padding: 10px;
+    text-transform: capitalize;
 }

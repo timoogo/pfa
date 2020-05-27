@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../../ressources/css/admin.css?v=n">
 </head>
 <?php
-include_once "database.php";
+include_once "../database.php";
 
     $result = deleteContact($_GET["id"]);
 header('Location: .');

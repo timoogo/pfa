@@ -62,9 +62,12 @@ h3,h2{
 #Users{
     margin:  auto;
 }
-.admin_disconnect, .admin_index{
+.admin_action_links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+#redirect a{
+    margin: auto 55px 0 0;  
 }
 
 select:hover{
@@ -97,4 +100,10 @@ span{
     padding: 3%; 
     width: 70%;
     color: #fff;
+}
+td:nth-child(3){
+    width: 30%;
+}
+td:nth-child(3) a{
+    margin: 0 40 0 0;
 }
