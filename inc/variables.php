@@ -32,42 +32,6 @@ $random_fact_description = "kako";
 
 $arr_names = array("$ec", "$km", "$sm", "$butters");
 
-
-
-$extracts_array = array(
-    array(
-        "titre" => 'Cartman -  La Passion du Juif',
-
-        "description" => "Cartman convainc Kyle d'aller voir La Passion du Christ. Ce film choque tellement Kyle qu'il remet sa foi en question. Stan et Kenny quant à eux trouvent le film si nul qu'ils veulent à tout prix se faire rembourser. Cartman, lui, décide de monter une armée pour exterminer les juifs.",
-        "url" => "https://www.youtube-nocookie.com/embed/BxuRiIbyzEY?controls=0",
-        "Episode :" => "114"
-    ),
-
-    array(
-        "titre" => 'Cartman - Les Stéroïdes, ça déchire',
-
-        "description" => "Alors que les Jeux olympiques spéciaux commencent à Denver, Cartman, voyant qu'il y a de l'argent en jeu, décide de se faire passer pour un handicapé pour empocher la cagnotte. ",
-        "url" => "https://www.youtube-nocookie.com/embed/zmPgXxRe9f8?controls=0",
-        "Episode :" => "113"
-    ),
-    array(
-        "titre" => 'Cartman, vengeance et chilli - Scott Tenorman doit mourrir',
-
-        "description" => "Cartman se fait mener en bateau par Scott Tenorman, un grand de seconde. Scott Tenorman lui vend ses poils, lui faisant croire que cela le rendra pubère. Apprenant qu'il s'est fait rouler, Cartman va tout faire pour se venger.",
-        "url" => "https://www.youtube-nocookie.com/embed/4qf5y7AaWbU?controls=0",
-        "Episode :" => "69"
-    ),
-
-    array(
-        "titre" => 'Association sportive des bébés du crack',
-
-        "description" => "Après avoir vu un spot publicitaire avec Sarah McLachlan attirant l'attention sur le sort des bébés accros au crack, Kyle décide de se porter volontaire à l'hôpital. Il découvre que Cartman a monté une entreprise très lucrative dont le but est de filmer des bébés qui se battent pour un ballon de basket pleine de crack.",
-        "url" => "https://www.youtube-nocookie.com/embed/YX9O1O2bNuQ?controls=0",
-        "Episode :" => "214"
-    )
-);
-
-
 //
 
 
@@ -76,12 +40,12 @@ $DEFAULT_DB_ADMIN = "timogo";
 $DEFAULT_DB_PWD = "mdp";
 
 $DB_URI = "mysql:host=localhost;dbname=administration;charset=utf8";
-$DB_USER = "root";
+$DB_ADMIN = "root";
 
 
-function RandomExtract($db_uri = "mysql:host=localhost;dbname=administration;charset=utf8", $db_user = "root")
+function RandomExtract($db_uri = "mysql:host=localhost;dbname=administration;charset=utf8", $db_admin = "root")
 {
-    $db = new PDO($db_uri, $db_user);
+    $db = new PDO($db_uri, $db_admin);
     $stmt = $db->prepare("SELECT * FROM videos ORDER BY RAND() LIMIT 1");
     $stmt ->execute();
     $res = $stmt->fetch(PDO::FETCH_ASSOC);

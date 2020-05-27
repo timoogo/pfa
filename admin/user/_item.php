@@ -3,21 +3,22 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-<tr>
-    <td> <?= $user["id"] ?></td>
+<tr style="padding: 15px">
+  <td>
+    <?=$user["name"]?>
+  
+</td>
+<td> <?= $user["email"] ?></td>
     <td>
-    <a href="<?= 'show.php?id=' . $user['id'] ?>"><?= $user["user_login"] ?></a>
-    </td>
-    <td>
-        <a href="<?= 'edit.php?id=' . $user['id'] ?>">update</a>
-        <button class="button" onclick="confirmDelete()">delete</button>
+    <a class="button" href="<?= 'show.php?id='.$user['id']?>"> update </a>
+        <button class="button" onclick="confirmDeleteUser()">delete</button>
     </td>
 </tr>
 
 <script>
-function confirmDelete() {
+function confirmDeleteUser() {
   if (confirm("Voulez vous vraiment supprimer cet utilisateur ?")) {
-    window.location.href = 'delete.php?id=<?= $user['id']; ?>';
+    window.location.href = 'delete_user.php?id=<?= $user['id']; ?>';
   }
 }
 </script>

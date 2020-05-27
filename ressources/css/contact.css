@@ -3,9 +3,7 @@
     --clear_color: #fff;
     --cta_color: #00cdae;
 }
-body{
-    overflow-y: hidden
-}
+
 header{
 top:0 ;
 }

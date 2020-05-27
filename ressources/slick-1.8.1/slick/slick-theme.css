@@ -117,6 +117,8 @@
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
+    width: 90%;
+    margin: auto;
 }
 
 .slick-dots

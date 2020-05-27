@@ -1,10 +1,10 @@
  <h3>list of users</h3>
 
- <?php include_once "database.php"; ?>
+ <?php include_once "../database.php"; ?>
  <table style="width:100%">
  <tr>
-    <th>id</th>
     <th>name</th>
+    <th>email</th>
     <th>actions</th>
   </tr>
 

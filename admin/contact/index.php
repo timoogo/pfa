@@ -2,7 +2,7 @@
 
 
 <header>
-    <link rel="stylesheet" href="../../ressources/css/admin.css?v=n">
+    <link rel="stylesheet" href="../../ressources/css/admin.css">
 </header>
 <?php
 session_start();
@@ -16,13 +16,10 @@ if(empty($_SESSION['user']))
 ?>
 <div id="wrapper">
   
-  <h1>Utilisateurs du site</h1>
-  
-  <h2>Si vous voulez ajouter un utilisateur admin, remplissez les champs ci-dessous</h2>
-  <?php include "new.php" ?>
+  <h1>Liste des contacts</h1>
 <hr>
 <!-- <h2>Si vous voulez accéder aux détails d'un utilisateur admin, cliquez sur son nom. Si vous voulez le supprimer cliquez sur "x"</h2> -->
-<?php include "list.php" ?>
+<?php include "show.php" ?>
 
 
 
@@ -35,4 +32,4 @@ if(empty($_SESSION['user']))
     <a href="../logout.php"> se déconnecter </a>
   </div>
 </footer>
-  </div>
+</div>

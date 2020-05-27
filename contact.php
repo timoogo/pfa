@@ -3,7 +3,7 @@ include_once('inc/head.inc.php');
 include_once('inc/variables.php');
  ?>
 <head>
-    <link rel="stylesheet" href="ressources/css/contact.css">
+    <link rel="stylesheet" href="ressources/css/style.css">
 </head>
 
 <body>
@@ -55,8 +55,8 @@ if (isset($_POST['send'])) {
                         error_log("envoyé", 0);
                         $display = "<div class='success'> L'email a été envoyé à ".$_POST['email']." </div>" ;
                       // on enregistre dans la db la demande
-                        $db = new PDO($DB_URI, $DB_USER, "");
-                        $data = $db->prepare("INSERT INTO contact_info(contact_email_adress) VALUES (?);");
+                        $db = new PDO($DB_URI, $DB_ADMIN, "");
+                        $data = $db->prepare("INSERT INTO contacts(email) VALUES (?);");
                         $data->execute(array($_POST["email"]));
             
                         

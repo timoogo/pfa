@@ -19,7 +19,7 @@ include_once('inc/head.inc.php');
              </div>
                   <h2> <?= $cartman; ?> </h2>
                   <p> <?= $cartman_content ?></p>
-                  <a href="#random_extract" class="cta">voir l'extrait random</a>
+                  <a href="#random_extract" class="button">voir l'extrait random</a>
                </div>
                <div class="right">
                   <img src="ressources/medias/images/cartman/cartman02.jpg" alt="cartman" id="sad_cartman">
@@ -78,13 +78,13 @@ include_once('inc/head.inc.php');
                         ?>
                     
                         <iframe width="560" height="315" src="<?=$myrdmextract['url']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                        <pre style:"color: white"><?php echo $myrdmextract?></pre>
+                    
                      </div>
                   </div>
                   <div class="right">
                      <h3><?=$myrdmextract['titre']?></h3>
                      <p> <?=$myrdmextract['description']?>  </p>
-                     <button type="button" onclick="reload_extract()" class="cta">voir un autre extrait</button>
+                     <button type="button" onclick="reload_extract()" class="button">voir un autre extrait</button>
                   </div>
                </div>
             </section>

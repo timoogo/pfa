@@ -1,5 +1,5 @@
 @import "common.css";
-
+/* 
 *{
     margin: 0;
     padding:0;
@@ -14,7 +14,7 @@
 }
 body{
 background-color: var(--black_color);
-}
+} */
 #wrapper{
     margin: 8vh auto;
     width: 80%;
@@ -25,13 +25,13 @@ hr{
     background-color: #fff;
 
 }
-
+/* 
 h1{
     text-align: center;
     color: #fff;
     margin: 5px auto; 
 
-}
+} */
 #welcome_admin{
     margin-bottom: 75px;
 }
@@ -47,15 +47,6 @@ h1{
     border: 1px solid var(--bg-color);
     background-color: var(--black-color);}
 
-.submitButton {
-    text-transform: uppercase;
-    border-radius: 15px;
-    background-color: var(--bg-color);
-    border-style: none;
-    width: 25%;
-    height: 60px;
-    color: #fff;
-}
 
 #connexion input[type="submit"]:focus, #connexion input[type="submit"]:hover{
     background-color: var(--black_color);
@@ -63,9 +54,7 @@ h1{
     border: 2px  solid var(--bg-color);
  
 }
-a {
-    color: var(--bg-color);
-}
+
 h3,h2{
     color: #fff;
     text-align: center;
@@ -78,27 +67,6 @@ h3,h2{
     justify-content: flex-end;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto ;
-    padding: 35px;
-    width: 70%;    
-}
-form.addUserForm input, form.updateUserForm input, input:not([type="submit"]) {
-    padding: 15px;
-    margin: 10px;
-}
-
-form.addUserForm input[type = "submit"], form.updateUserForm input[type = "submit"]{
-    margin:15px auto;
-
-}
-form.updateUserForm select{
-    width: 98%;
-    margin: auto;
-    padding: 15px;
-}
 select:hover{
    cursor: pointer; 
 }

@@ -1,31 +1,13 @@
 @import "common.css";
-
-:root {
-    --black_color: #161a23;
-    --clear_color: #fff;
-    --cta_color: #00cdae;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-decoration: none;
-    font-weight: normal;
-    font-family: serif;
-    color: var(--black_color);
-    font: 1em sans-serif;
-}
+@import "header.css";
+@import "contact.css";
 
 #defaultCanvas0 {
     z-index: -999;
+    height: 711px; position: absolute; left: 0px; top: 837.6px;width:   2000;
 }
 
-body {
-    background-color: var(--black_color);
-    width: 100%;
-    overflow-x: hidden;
-}
+
 
 
 #logo {
@@ -40,115 +22,11 @@ width: 100%;
 height: 100%;
 }
 
-
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90px;
-    width: 100%;
-    position: fixed;
-    background-color: var(--black_color);
-    z-index: 3;
-}
-
-header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    
-
-}
-
-header li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-}
 input#menu-btn {
     display: none;
 }
 
 /* menu */
-
-header .menu_burger {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    /* float: right; */
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  header .menu-icon .navicon {
-    background: var(--cta_color);
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  header .menu-icon .navicon:before,
-  header .menu-icon .navicon:after {
-    background: var(--cta_color);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  
-  header .menu-btn {
-    display: none;
-  }
-  
-  header .menu-btn:checked ~ .menu_burger {
-    max-height: 240px;
-  }
-  
-  header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-
-
-
-
 
 
 
@@ -163,6 +41,9 @@ footer {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+}
+#cartman_memento{
+    margin: 15px auto 30px;
 }
 
 
@@ -296,41 +177,13 @@ section#fun_facts {
 /* global  */
 
 /* css specifique */
-.cta,
-button {
-    background-color: var(--cta_color);
-    border-radius: 15px;
-    display: inline-block;
-    cursor: pointer;
-    color: var(--black_color);
-    font-family: Arial;
-    font-size: 17px;
-    padding: 15px 60px;
-    text-decoration: none;
-    border-style: none;
-    text-transform: uppercase;
-}
-button {
-    text-transform: uppercase;
-    border-radius: 15px;
-    background-color: var(--cta_color);
-    border-style: none;
 
-}
 li a:hover{ 
     text-decoration: underline #fff ;
     }
 
 a.cta {
     margin: 15px 0;
-}
-.cta:hover {
-    background-color: var(--clear_color);
-}
-
-.cta:active {
-    position: relative;
-    top: 1px;
 }
 
 ::selection {
@@ -343,38 +196,6 @@ a.cta {
     background: var(--cta_color);
     /* Gecko Browsers */
     color: var(--clear_color);
-}
-h1 {
-    color: #fff;
-    font-size: 18pt;
-    text-align: center;
-    position: relative;
-    bottom: 20vh;
-
-}
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-    margin: 2%;
-
-}
-
-p {
-    text-align: justify;
-}
-
-h3 {
-    text-align: center;
-
-    font-size: 25px;
-}
-
-a,
-p,
-h2,
-h3 {
-    color: var(--cta_color);
 }
 
 
@@ -469,7 +290,6 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
     body {
         background-color: var(--black_color);
         width: 100%;
-        overflow-x: hidden;
         box-sizing: border-box;
     }
     header{
@@ -544,7 +364,6 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
     body {
         background-color: var(--black_color);
         width: 100%;
-        overflow-x: hidden;
         box-sizing: border-box;
     }
     header{top: 0;}

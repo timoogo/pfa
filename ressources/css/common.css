@@ -1,0 +1,115 @@
+
+:root {
+    --black_color: #161a23;
+    --clear_color: #fff;
+    --cta_color: #00cdae;
+    --cta_color_dark: #03312E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: serif;
+    font: 1em sans-serif;
+}
+
+body {
+    background-color: var(--black_color);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.button {
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: var(--cta_color);
+    border-style: none;
+    color: #fff;
+    text-align: center;
+    padding: 15px ;
+    cursor: pointer;
+}
+
+.button:hover{
+        background-color: var(--cta_color_dark);
+
+}
+a.button{
+    padding: 20px 15px;
+}
+
+.cta:hover {
+    background-color: var(--clear_color);
+}
+
+.cta:active {
+    position: relative;
+    top: 1px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 18pt;
+    text-align: center;
+    position: relative;
+    bottom: 20vh;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 2%;
+
+}
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
+
+    font-size: 25px;
+}
+
+a,
+p,
+h2,
+h3 {
+    color: var(--cta_color);
+}
+
+/* enlever les dependance "user" */
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto ;
+    padding: 35px;
+    width: 70%;    
+}
+/* form.addUserForm input, form.updateUserForm input, input:not([type="submit"]) {
+    padding: 15px;
+    margin: 10px;
+} */
+
+input[type = "submit"]{
+    margin:15px auto;
+
+}
+form.updateUserForm select{
+    width: 98%;
+    margin: auto;
+    padding: 15px;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 8px 0px;
+    padding: 4px 20px;
+    height: 40px;
+}

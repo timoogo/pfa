@@ -1,3 +1,48 @@
+
+drop TABLE if exists users, articles, contacts, videos; 
+
+CREATE TABLE  `users` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` TEXT NOT NULL,
+    `email` VARCHAR(255),
+	`password` VARCHAR(255) NOT NULL,
+	`created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'timogo', 'tiimogo@gmail.com', 'mdp', '2020-05-27 12:21:52', '2020-05-27 14:21:52');
+
+CREATE TABLE `articles` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` VARCHAR(255) NOT NULL,
+	`content` VARCHAR(255),
+	`created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+CREATE TABLE `contacts` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`email` VARCHAR(255) NOT NULL,
+	`created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+INSERT INTO `contacts`(`email`) VALUES (
+        'example@gmail.com');
+
+
+
+CREATE TABLE `videos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `titre` varchar(100) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `episode` int(11) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 INSERT INTO `videos`(`titre`, `description`, `url`, `episode`) VALUES (
         'Cartman -  La Passion du Juif',
 
