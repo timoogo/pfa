@@ -1,3 +1,12 @@
+<!--
+
+    A VOIR SI NE PAS REUTILISER USERS : CA SERAIIT PEUT ÊTRE UNE MEILLEURE SOLUTION
+  -->
+
+
+
+
+
 <!-- TEMPLATE UN ARTICLE -->
 <?php 
 include_once '../database.php';

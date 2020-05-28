@@ -1,21 +1,21 @@
 <!-- php -S 127.0.0.1:5500 -->
 <!-- start http://127.0.0.1:5500 -->
 <?php
-include_once('inc/header.inc.php');
 include_once('inc/head.inc.php');
+include_once('inc/header.inc.php');
    include 'inc/variables.php';
    ?>
    <main>
      
       <div class="container">
-      <?php require('inc/head.inc.php'); ?>
+      <?php // require('inc/head.inc.php'); ?>
          <div id="content">
    
             <section id="first_screen">
           
                <div class="left">
              <div class="title">
-             <h1>Un site qui vous présentera cartman et ses amis ! </h1>
+             <h1>  <i class="fab fa-accessible-icon"></i> Un site qui vous présentera cartman et ses amis ! </h1>
              </div>
                   <h2> <?= $cartman; ?> </h2>
                   <p> <?= $cartman_content ?></p>
