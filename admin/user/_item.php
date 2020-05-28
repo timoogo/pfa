@@ -5,13 +5,17 @@
 
 <tr style="padding: 15px">
   <td>
+    <?=$user["id"]?>
+  
+</td>
+  <td>
     <?=$user["name"]?>
   
 </td>
 <td> <?= $user["email"] ?></td>
     <td>
     <a class="button" href="<?= 'show.php?id='.$user['id']?>"> update </a>
-        <button class="button" onclick="confirmDeleteUser()">delete</button>
+    <a onclick="confirmDeleteUser()" class="button" href=<?php echo"delete_user.php?id=".$user['id'] ?>>delete</a>
     </td>
 </tr>
 

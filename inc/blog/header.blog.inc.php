@@ -1,8 +1,8 @@
-<header><link rel="stylesheet" href="../ressources/css/style.css"> <!-- page de css principale (?v=n permet --></header>
+<!-- <header><link rel="stylesheet" href="../ressources/css/style.css"></header> -->
 
 <header>
     <div id="logo">
-        <a href="../../index.php"><img src="../../ressources/medias/images/South_Park_sign_logo.png" alt="projet" id="logo" title="logo projet"></a>
+        <a href="../../index.php"><img src="../ressources/medias/images/South_Park_sign_logo.png" alt="projet" id="logo" title="logo projet"></a>
     </div>
 
     <input class="menu-btn" type="checkbox" id="menu-btn" />

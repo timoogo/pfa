@@ -107,7 +107,7 @@ form.updateUserForm select{
     padding: 15px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type= "email"] {
     font-size: 18px;
     border-radius: 20px;
     margin: 8px 0px;

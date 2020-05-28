@@ -1,11 +1,8 @@
 <!-- CETTE PAGE GERE LA CONNEXION APRES LE FORM DE @CONNEXION.PHP -->
 
-<header>
-    <link rel="stylesheet" href="ressources/css/admin.css">
-</header>
-
-
 <?php
+include_once (dirname(__DIR__).'/inc/admin/head.inc.php'); 
+
 include_once '../inc/variables.php';
 if (isset($_GET["action"])) {
 
@@ -31,7 +28,16 @@ if (isset($_GET["action"])) {
                     $_SESSION['user'] = $_POST["login"];
 
                     ?>
-                    <a href="user">Accéder a la liste des utilisateurs</a>
+     <footer>
+<div class="admin_action_links">
+    <div id="redirect">
+        <a href="user/index.php"> Gérer les administrateurs </a>
+        <a href="contact/index.php"> Gérer les demandes de contacts </a>
+    </div>
+    <a href="logout.php"> se déconnecter </a>
+
+  </div>
+</footer>
 
 
 

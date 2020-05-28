@@ -16,13 +16,21 @@ $user = selectUser($userId);
 ?>
 <div id="wrapper">
     <h1>Détails sur l'utilisateur: <?=$user["name"] ;?></h1>
-    <span> id: <?= $user["id"];?> </span>
-    <span> name: <?= $user["name"];?></span> 
-    <span> email: <?= $user["email"];?> </span>
-    <span> password: <?= $user["password"];?> </span>
-    <a href=<?php echo"edit.php?id=".$user['id']."&name=".$user['name'] ?>>Edit user</a>
-    <a href=<?php echo"delete_user.php?id=".$user['id']."&name=".$user['name'] ?>>Delete user</a>
-    <div class="admin_index" >
-        <a href=".">back to index</a>
-    </div>
+<table class="infoUser">
+    <tr>
+    <td> id: <?= $user["id"];?> </td>
+    <td> name: <?= $user["name"];?></td> 
+    <td> email: <?= $user["email"];?> </td>
+     </tr>";
+</table>
+
+
+
+
+ 
+ <div class='management'>
+     <a href=<?php echo"edit.php?id=".$user['id'] ?>>edit user</a>
+     <a href=<?php echo"delete_user.php?id=".$user['id'] ?>>delete user</a>
+ </div>
+<?php include '../../inc/admin/footer.inc.php'?>
 </div>

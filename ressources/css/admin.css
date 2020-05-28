@@ -64,6 +64,7 @@ h3,h2{
 }
 .admin_action_links{
     display: flex;
+    flex-direction: inherit;
     justify-content: space-between;
 }
 #redirect a{
@@ -101,9 +102,22 @@ span{
     width: 70%;
     color: #fff;
 }
+td{
+    height: 100px;
+}
 td:nth-child(3){
     width: 30%;
 }
 td:nth-child(3) a{
     margin: 0 40 0 0;
+}
+.management {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+}
+.management:hover{
+    color: #fff;
+}
+.infoUser{
+    margin: 10vh auto    ;
 }

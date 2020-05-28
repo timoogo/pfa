@@ -13,6 +13,7 @@ $stmt = $db->prepare("SELECT * FROM contacts ORDER BY created_at DESC");
         $stmt->execute(); 
 while ($row = $stmt->fetch(PDO::FETCH_OBJ)) {
     echo "
+
     <tr>
     <td>".  $row -> id." </td>. 
     <td> ". $row -> email." </td>

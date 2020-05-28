@@ -1,1 +1,5 @@
+@import "common.css";
 @import "style.css";
+.wrapper{
+  margin: 110px;
+}
