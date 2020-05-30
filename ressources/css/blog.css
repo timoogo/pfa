@@ -1,5 +1,43 @@
 @import "common.css";
 @import "style.css";
-.wrapper{
+#wrapper{
   margin: 110px;
+}
+article{
+  padding: 15px;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+}
+article a:hover{
+  color: white;
+  text-decoration:underline white;
+}
+article::before {
+  content: 'Article :';
+  color: #fff;
+}
+
+time{
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+}
+h1{
+  margin: 15px auto;
+    padding: 45px;
+}
+p{
+  margin: 15px;
+}
+img{
+    
+  margin: 35px auto;
+  display: block;
+
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

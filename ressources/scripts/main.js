@@ -31,7 +31,7 @@ $(document).ready(() => {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     autoplay: false,
                     autoplaySpeed: 2500,      
                     slidesToScroll: 1,

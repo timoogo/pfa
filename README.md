@@ -32,4 +32,3 @@ la variable d'environnement MAIL_SMTP_PWD)
 
  La structure des extraits est définie dans variables.php ainsi que le fonctionnement du sélecteur d'un extrait random
 
- ### La section #fun_facts est en cours de développment et fonctionnera comme les extraits de video random

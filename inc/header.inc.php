@@ -9,7 +9,7 @@
         <li> <a href="index.php">Accueil</a></li>
         <li> <a href="contact.php">Contact</a></li>
         <li> <a href="connexion.php">Espace admin</a></li>
-        <li> <a href="/pfa/blog/blog.php">Blog</a></li>
+        <li> <a href="blog.php">Blog</a></li>
     </ul>
 
 </header>

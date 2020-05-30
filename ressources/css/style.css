@@ -2,7 +2,8 @@
 @import "header.css";
 @import "contact.css";
 
-#defaultCanvas0 {
+#defaultCanvas0{
+    display: none;
     z-index: -999;
     height: 711px; position: absolute; left: 0px; top: 837.6px;width:   2000;
 }
@@ -144,38 +145,10 @@ p.infos {
 
 
 /* SECTION 4 */
-section#fun_facts {
-    margin-top: 20vh;
-    z-index: -1000;
-}
- 
-
-.fact {
-    /* background-color: var(--cta_color); */
-    width: 960px;
-    height: 500px;
-    margin: auto;
 
 
-}
-
-.the_fact {
-    text-align: justify;
-    background-color: rgb(0, 0, 0);
-}
-
-.fact p {
-    margin: 44% 1% 2% 1%;
-    background-color: rgba(0, 0, 0, .7);
-    line-height: 1.5;
-    font-size: 16pt;
 
 
-}
-
-#fact_1 {
-    background-image: url("https://fr.web.img6.acsta.net/r_1280_720/newsv7/18/01/25/16/56/3851158.jpg");
-}
 
 /* global  */
 
@@ -288,8 +261,11 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
 }
 
 
-/* media query tablette */
+
 @media(min-width: 500px) and (max-width: 768px) {
+    canvas#defaultCanvas0{
+        display: none;
+    }
     body {
         background-color: var(--black_color);
         width: 100%;
@@ -298,14 +274,11 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
     header{
         top: 0;
     }
-    .title h1{
-        bottom: 10px;
+
+    .title {
+        margin: 150px auto 50px;
     }
-    
-    label.menu-icon {
-        position: relative;
-        left: 45%;
-    }
+
     
     #content>#first_screen {
         display: block;
@@ -315,7 +288,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
     section#first_screen .left
     {
         position: relative;
-        top: 20%;
+        /* top: 20%; */
         height: fit-content;
         width: 75%;
         margin-bottom: 20vh;
@@ -329,9 +302,9 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
         width: 60%;
         height: fit-content;
         position: relative;
-        top: 150px!important;
+        top: 30px!important;
         display: block;
-        margin: auto;    
+        margin: 50px auto;    
     }
  
     section#first_screen div.right img#sad_cartman {
@@ -344,26 +317,37 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
         transform: rotate(0deg);
     }
 
-
-
-    #random_extract_container {
-        display: block;
-       
-        width: 100%;
+    section#random_extract{
         margin: auto;
+    }
+    #random_extract_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    #random_extract_container .right {
+        width: 75%;
+        margin: 20px auto;
     }
     #video-container video{
         width: 100%;
     }
     #random_extract .left{
-        margin: 0;
+        margin: auto;
+        width: 100%;
     }
 
-   
+   iframe{
+    width: 100%;
+    margin: auto;
+    display: block;
+   }
 }
 
-
+/* media query tablette */
 @media(min-width: 768px) and (max-width: 1388px) {
+
     body {
         background-color: var(--black_color);
         width: 100%;

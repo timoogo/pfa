@@ -88,16 +88,6 @@ include_once('inc/header.inc.php');
                   </div>
                </div>
             </section>
-            <section id="fun_facts">
-               <h2>Fun fact</h2>
-               <div class="fact">
-                  <div class="the_fact" id="fact_1">
-               
-                
-                  </div>
-               
-               </div>
-            </section>
          </div>
       </div>
       <?php require('inc/footer.inc.php'); ?>

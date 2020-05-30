@@ -1,8 +1,7 @@
-<header>
+    <header>
     <div id="logo">
-        <a href="/pfa/index.php"><img src="../ressources/medias/images/South_Park_sign_logo.png" alt="projet" id="logo" title="logo projet"></a>
+        <a href="index.php"><img src="../../ressources/medias/images/South_Park_sign_logo.png" alt="projet" id="logo" title="logo projet"></a>
     </div>
-
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"> </span> </label>
     <ul class="menu_burger">
@@ -13,6 +12,7 @@
     </ul>
 
 </header>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>      
-
-
+<body>
+    
+<?php 
+    include_once '../../inc/admin/header.inc.php'; ?>

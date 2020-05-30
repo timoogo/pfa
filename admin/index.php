@@ -3,7 +3,7 @@
 <?php
 include_once (dirname(__DIR__).'/inc/admin/head.inc.php'); 
 
-include_once '../inc/variables.php';
+include_once '../inc/variables.php' ;
 if (isset($_GET["action"])) {
 
     if ($_GET["action"] == "connexion") {
@@ -21,26 +21,30 @@ if (isset($_GET["action"])) {
                 if ($result["name"] === $_POST["login"] && $result["password"] === $_POST["pass"]) {
 
 ?>
+<body>
+<div id="wrapper">
+</div>
 <?php
-
+    
 
                     session_start();
                     $_SESSION['user'] = $_POST["login"];
-
+                   
                     ?>
+                    
      <footer>
 <div class="admin_action_links">
     <div id="redirect">
         <a href="user/index.php"> Gérer les administrateurs </a>
         <a href="contact/index.php"> Gérer les demandes de contacts </a>
+        <a href="blog/redaction.php"> écrire un article </a>
     </div>
     <a href="logout.php"> se déconnecter </a>
 
   </div>
 </footer>
 
-
-
+</body>
 
 
 

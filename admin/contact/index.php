@@ -1,9 +1,9 @@
 <!-- CETTE PAGE C'EST UN RESUME POUR AJOUTER / SUPPRIMER / METTRE A JOUR UN CONTACT -->
 
 
-<header>
+ <header>
     <link rel="stylesheet" href="../../ressources/css/admin.css">
-</header>
+</header> 
 <?php
 session_start();
 // ! A rajouter au debut de chaque fonctionnalité admin

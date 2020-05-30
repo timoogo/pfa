@@ -1,3 +1,4 @@
+@import "style.css";
 @import "common.css";
 /* 
 *{
@@ -61,6 +62,7 @@ h3,h2{
 }
 #Users{
     margin:  auto;
+    height: 45vh;
 }
 .admin_action_links{
     display: flex;
@@ -120,4 +122,13 @@ td:nth-child(3) a{
 }
 .infoUser{
     margin: 10vh auto    ;
+}
+textarea#redaction{
+    margin: 0 auto;
+    width: 83% !important;
+    box-sizing: border-box;
+    min-width: 83%;
+    
+}form#redaction{
+    height: 60vh;
 }

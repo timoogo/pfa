@@ -40,7 +40,7 @@ if (isset($_POST['send'])) {
                     $email->setFrom('kaka@koko.com', 'Contact Cartman');
                     $email->addAddress( $_POST['email'], '');
 
-                    $email->Subject = 'Force';
+                    $email->Subject = $_POST['message'];
                     $email->Body = $_POST['message'];
                     $email->isSMTP();
                     $email->Host = 'smtp.gmail.com';
@@ -97,7 +97,7 @@ if (isset($_POST['send'])) {
 
                     <!-- <label for="message">Votre message</label> -->
                     <textarea class="form-control" rows="10" id="message" placeholder="Indiquez votre message" name="message"></textarea>
-                <input type="submit" class="btn btn-primary" value="Envoyer le message" name="send">
+                <input type="submit" class="button" value="Envoyer le message" name="send">
             </form>
         </div>
     </div>

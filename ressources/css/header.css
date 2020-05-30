@@ -19,7 +19,14 @@ header ul {
     
 
 }
-
+label.menu-icon {
+  position: relative;
+  left: 65%;
+}
+input#menu-btn {
+  display: none;
+}
+@media(min-width: 500px) and (max-width: 1024px) {
 header li a {
     display: block;
     padding: 20px 20px;
@@ -98,7 +105,8 @@ header .menu_burger {
   header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+}
 
-
-
+/*  */
+/*  */
 
