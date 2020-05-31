@@ -120,7 +120,7 @@ function insertContact($email)
 ///
 function insertArticleBlog($title, $content, $image = '')
 {
-    $db = $GLOBALS['db'];
+    $db = $GLOBALS['db']; // mysql, h
     $sql = "INSERT INTO articles (title, content, image_link) VALUES (?,?,?)";
     $stmt =  $db->prepare($sql);
     $stmt->execute([$title, $content, $image]);

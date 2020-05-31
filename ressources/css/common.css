@@ -21,25 +21,32 @@ body {
     width: 100%;
      
 }
-
-.button {
-    text-transform: uppercase;
-    border-radius: 15px;
-    background-color: var(--cta_color);
-    border-style: none;
-    color: #fff;
-    text-align: center;
-    padding: 20px 15px;
-    cursor: pointer;
-    margin: 3px;
+#defaultCanvas0{
+    display: none;
+    z-index: -999 !important;
+    height: 711px; position: absolute; left: 0px; top: 837.6px;width:   2000;
 }
 
-.button:hover{
+.button {
+    text-transform: uppercase !important;
+    border-radius: 15px !important;
+    background-color: var(--cta_color) !important;
+    border-style: none !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: 20px 15px !important;
+    cursor: pointer !important;
+    margin: 35px calc(auto +5px) !important;
+}
+
+i+.button:hover, .button{
         background-color: var(--cta_color_dark);
 
 }
 a.button{
     padding: 20px 15px;
+    margin: 0 20px;
+    width: fit-content;
 }
 
 .cta:hover {
@@ -162,4 +169,7 @@ th{
     background-color: var(--cta_color);
     color: #fff;
     transition: 0.6s background-color ease-in-out;
+}
+.fas{
+    margin-right: 8px;
 }

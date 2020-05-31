@@ -10,7 +10,6 @@
         <li> <a href="../../connexion.php">Espace admin</a></li>
         <li> <a href="../../blog.php">Blog</a></li>
     </ul>
-
 </header>
 <body>
     

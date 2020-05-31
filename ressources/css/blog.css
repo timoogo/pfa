@@ -41,3 +41,14 @@ footer{
   flex-direction: row;
   justify-content: space-around;
 }
+.min{
+  display: inline-block;
+  border: 3px solid #00dcae;
+  
+}
+.min img {
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+
+  }

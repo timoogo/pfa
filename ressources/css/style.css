@@ -4,8 +4,12 @@
 
 #defaultCanvas0{
     display: none;
-    z-index: -999;
-    height: 711px; position: absolute; left: 0px; top: 837.6px;width:   2000;
+    z-index: -999 !important;
+    height: 800px;
+     position: absolute; 
+    left: 0px;
+     top: 850px;
+    width:   2000;
 }
 
 

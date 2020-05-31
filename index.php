@@ -15,11 +15,11 @@ include_once('inc/header.inc.php');
           
                <div class="left">
              <div class="title">
-             <h1>  <i class="fab fa-accessible-icon"></i> Un site qui vous présentera cartman et ses amis ! </h1>
+             <h1> <i class="fas fa-flag"></i> Un site qui vous présentera cartman et ses amis ! </h1>
              </div>
                   <h2> <?= $cartman; ?> </h2>
                   <p> <?= $cartman_content ?></p>
-                  <a href="#random_extract" class="button">voir l'extrait random</a>
+                  <a href="#random_extract" class="button"> <i class="fas fa-eye"></i>voir l'extrait random</a>
                </div>
                <div class="right">
                   <img src="ressources/medias/images/cartman/cartman02.jpg" alt="cartman" id="sad_cartman">
@@ -84,7 +84,7 @@ include_once('inc/header.inc.php');
                   <div class="right">
                      <h3><?=$myrdmextract['titre']?></h3>
                      <p> <?=$myrdmextract['description']?>  </p>
-                     <button type="button" onclick="reload_extract()" class="button">voir un autre extrait</button>
+                     <button type="button" onclick="reload_extract()" class="button"> <i class="fas fa-eye"></i>voir un autre extrait</button>
                   </div>
                </div>
             </section>

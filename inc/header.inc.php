@@ -1,6 +1,6 @@
 <header>
     <div id="logo">
-        <a href="index.php"><img src="ressources/medias/images/South_Park_sign_logo.png" alt="projet" id="logo" title="logo projet"></a>
+        <a href="index.php"><img src="ressources/medias/images/assets/logo.png" alt="projet" id="logo" title="logo projet"></a>
     </div>
 
     <input class="menu-btn" type="checkbox" id="menu-btn" />

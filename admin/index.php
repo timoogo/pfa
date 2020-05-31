@@ -19,7 +19,8 @@ if (isset($_GET["action"])) {
             // si contenu,   
             if ($result != false) {
                 if ($result["name"] === $_POST["login"] && $result["password"] === $_POST["pass"]) {
-
+      
+include_once (dirname(__DIR__).'../inc/admin/head.inc.php'); 
 ?>
 <body>
 <div id="wrapper">
@@ -29,20 +30,10 @@ if (isset($_GET["action"])) {
 
                     session_start();
                     $_SESSION['user'] = $_POST["login"];
-                   
+                   include '../inc/admin/footer.inc.php';
                     ?>
                     
-     <footer>
-<div class="admin_action_links">
-    <div id="redirect">
-        <a href="user/index.php"> Gérer les administrateurs </a>
-        <a href="contact/index.php"> Gérer les demandes de contacts </a>
-        <a href="blog/redaction.php"> écrire un article </a>
-    </div>
-    <a href="logout.php"> se déconnecter </a>
 
-  </div>
-</footer>
 
 </body>
 

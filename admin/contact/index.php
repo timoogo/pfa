@@ -1,12 +1,13 @@
 <!-- CETTE PAGE C'EST UN RESUME POUR AJOUTER / SUPPRIMER / METTRE A JOUR UN CONTACT -->
 
 
- <header>
+ <head>
     <link rel="stylesheet" href="../../ressources/css/admin.css">
-</header> 
+    <title>Contacts</title>
+</head> 
 <?php
-session_start();
 // ! A rajouter au debut de chaque fonctionnalité admin
+session_start();
 if(empty($_SESSION['user'])) 
 {
   header('Location: ../../connexion.php');

@@ -1,7 +1,7 @@
 <!-- C'EST LA PAGE D'ARCHIVE DES ARTICLES  -->
 
 <?php 
-include_once 'inc/blog/head.blog.inc.php';
+include_once 'inc/blog/head.blog.front.inc.php';
 include_once 'inc/blog/header.blog.inc.php';
 include 'inc/variables.php';
 $db = new PDO($DB_URI, $DB_ADMIN, "");

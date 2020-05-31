@@ -1,10 +1,12 @@
 <!-- CETTE PAGE C'EST UN RESUME POUR AJOUTER / SUPPRIMER / METTRE A JOUR UN USER -->
 
-
-<header>
-    <link rel="stylesheet" href="../../ressources/css/admin.css?v=n">
-</header>
+<head>
+    <link rel="stylesheet" href="../../ressources/css/admin.css">
+    <title>Users</title>
+</head> 
+>
 <?php
+include '../../inc/admin/head.inc.php';
 session_start();
 // ! A rajouter au debut de chaque fonctionnalité admin
 if(empty($_SESSION['user'])) 
