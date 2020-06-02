@@ -22,8 +22,8 @@ body {
      
 }
 #defaultCanvas0{
-    display: none;
-    z-index: -999 !important;
+    /* display: none; */
+    z-index: -10 !important;
     height: 711px; position: absolute; left: 0px; top: 837.6px;width:   2000;
 }
 

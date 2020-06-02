@@ -121,14 +121,14 @@ On veut bloquer le scroll avec les touches 32 a 40
   Liste complète disponible ici : [https://bit.ly/2zhnn3k]
  ----------------------------------------------- */
 
-//  var keyToPrevent = new Array(32,33,34,35,36,37,38,39,40);
-//  $(document).ready(() => {
-//    $(document).keydown(function(e) {
-//      var key = e.which;
-//       if($.inArray(key,keyToPrevent) > -1) {
-//           e.preventDefault();
-//           return false;
-//       }
-//       return true;
-//  });
-//    });
+  // var keyToPrevent = new Array(32,33,34,35,36,37,38,39,40);
+  // $(document).ready(() => {
+  //   $(document).keydown(function(e) {
+  //     var key = e.which;
+  //      if($.inArray(key,keyToPrevent) > -1) {
+  //          e.preventDefault();
+  //          return false;
+  //      }
+  //      return true;
+  // });
+  //   });

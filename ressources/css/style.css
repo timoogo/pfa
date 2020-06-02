@@ -1,15 +1,15 @@
-@import "common.css";
 @import "header.css";
+@import "common.css";
 @import "contact.css";
 
 #defaultCanvas0{
-    display: none;
-    z-index: -999 !important;
+    /* display: none; */
+    z-index: -10 !important;
     height: 800px;
      position: absolute; 
     left: 0px;
-     top: 850px;
-    width:   2000;
+    top: 850px;
+    width:   1700px;
 }
 
 
@@ -27,9 +27,7 @@ width: 100%;
 height: 100%;
 }
 
-input#menu-btn {
-    display: none;
-}
+
 
 /* menu */
 
@@ -190,7 +188,7 @@ a.cta {
 
 /* COPYRIGHT */
 #wrapper_copyright {
-    margin: auto;
+    margin:  110px auto;
     width: 80%;
 }
 
@@ -247,22 +245,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUER
  /* destop only
  enlever le menu burger
  */
-@media (min-width: 48.1em) {
-    header li {
-      float: left;
-    }
-    header li a {
-      padding: 20px 30px;
-    }
-    header .menu_burger {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    header .menu-icon {
-      display: none;
-    }
-}
+
 
 
 

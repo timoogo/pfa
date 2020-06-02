@@ -27,6 +27,7 @@ la variable d'environnement MAIL_SMTP_PWD)
 - Utilisation de la librairie P5.js 
 - Le canvas sur lequel se dessine l'animation de la souris suit la position courante de l'utilisateur 
 - Scripts utilisés définis dans tracker.php et sont inclus dans le header pour être chargés dès le début du chargement des pages
+- je l'ai désactivé, car je ne trouvais pas pertinent de le mettre avec mon site, mais vous trouverez les fichiers
   
 ❑  Extraits vidéos random
 

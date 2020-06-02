@@ -9,7 +9,8 @@ $smtp =$db->prepare('SELECT id, created_at, title FROM articles ORDER BY created
 $smtp->execute();
 ?>
 <body>
-<div id="wrapper">  <?php
+<div id="wrapper"> 
+     <?php
 while ($row = $smtp->fetch(PDO::FETCH_OBJ)) { ?>
   
     <article>
@@ -21,5 +22,5 @@ while ($row = $smtp->fetch(PDO::FETCH_OBJ)) { ?>
 </div>
 </body>
 
-    <?php // include_once 'inc/blog/footer.blog.inc.php';
+    <?php  include_once 'inc/blog/footer.blog.inc.php';
     ?>

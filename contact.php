@@ -37,23 +37,23 @@ if (isset($_POST['send'])) {
         if (iconv_strlen(trim($_POST['nom'])) >= 2  && iconv_strlen(trim($_POST['nom'])) <= 20) {
             if (iconv_strlen(trim($_POST['message'])) >= 1  && iconv_strlen(trim($_POST['message'])) <= 200) {
                 if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {                   
-                    $email->setFrom('kaka@koko.com', 'Contact Cartman');
-                    $email->addAddress( $_POST['email'], '');
+                    $email->setFrom($_POST['email'], $_POST['prenom'] . ' '. $_POST['nom']);
+                    $email->addAddress($contact_email_address, '');
 
-                    $email->Subject = $_POST['message'];
+                    $email->Subject = 'Contact request from ' . $_POST['email'];
                     $email->Body = $_POST['message'];
                     $email->isSMTP();
                     $email->Host = 'smtp.gmail.com';
                     $email->SMTPAuth = TRUE;
                     $email->SMTPSecure = 'tls';
                  
-                    $email->Username = 'steams66@gmail.com';
+                    $email->Username = $contact_email_address;
                     $email->Password = getenv('MAIL_SMTP_PWD');
                     $email->Port = 587;
            
                     if($email->send()) {
                         error_log("envoyé", 0);
-                        $display = "<div class='success'> L'email a été envoyé à ".$_POST['email']." </div>" ;
+                        $display = "<div class='success'> La demande de contact a bien été envoyée </div>" ;
                       // on enregistre dans la db la demande
                         $db = new PDO($DB_URI, $DB_ADMIN, "");
                         $data = $db->prepare("INSERT INTO contacts(email) VALUES (?);");

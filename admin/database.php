@@ -136,3 +136,27 @@ function getArticleBlog($id)
     // $stmt->debugDumpParams();
     return $stmt->fetch(PDO::FETCH_OBJ);
 }
+
+//////////////////////////////////////////////////////
+//GALERIE
+function directoryReader($directory, array $excludeFiles = ['.', '..', '.DS_STORE'])
+{       
+    $files = [];
+    if (!is_dir($directory)) {
+        return null;
+    }
+
+    if(!($filesDirectory = opendir($directory) )){
+        return null;
+    }
+
+    while(($file = readdir($filesDirectory) !== false)){
+        //  if(in_array($file, $excludeFiles)){
+        //      continue;
+        //     }
+            $files[] = $directory . '/'.$file;
+    }
+    closedir($filesDirectory);
+    return $files;
+}
+return true;

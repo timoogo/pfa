@@ -2,15 +2,15 @@
 <!-- start http://127.0.0.1:5500 -->
 <?php
 include_once('inc/head.inc.php');
-include_once('inc/header.inc.php');
+ include_once('inc/header.inc.php');
    include 'inc/variables.php';
    ?>
    <main>
      
       <div class="container">
-      <?php // require('inc/head.inc.php'); ?>
+      <?php  include_once('inc/head.inc.php'); ?>
          <div id="content">
-   
+   <!-- la première  -->
             <section id="first_screen">
           
                <div class="left">

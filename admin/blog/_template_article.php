@@ -10,8 +10,8 @@
 
 <?php 
   include '../database.php';
-  include '../../inc/blog/header.blog.inc.php';
   include '../../inc/blog/head.inc.php';
+  include '../../inc/blog/header.blog.inc.php';
 
   $article = getArticleBlog($_GET['id']);
   ?>

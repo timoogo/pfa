@@ -1,6 +1,6 @@
 /*
-Orginally from Jay LaPorte at https://github.com/ironwallaby/delaunay/blob/master/delaunay.js
-Tweaked it so instead of raising an error it would return an empty list.
+basé sur le travail de Jay LaPorte de https://github.com/ironwallaby/delaunay/blob/master/delaunay.js
+
 */
 
 var Delaunay;

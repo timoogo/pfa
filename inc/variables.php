@@ -34,10 +34,8 @@ $arr_names = array("$ec", "$km", "$sm", "$butters");
 
 //
 
+$contact_email_address = 'steams66@gmail.com';
 
-
-$DEFAULT_DB_ADMIN = "timogo";
-$DEFAULT_DB_PWD = "mdp";
 
 $DB_URI = "mysql:host=localhost;dbname=administration;charset=utf8";
 $DB_ADMIN = "root";
@@ -48,8 +46,7 @@ function RandomExtract($db_uri = "mysql:host=localhost;dbname=administration;cha
     $db = new PDO($db_uri, $db_admin);
     $stmt = $db->prepare("SELECT * FROM videos ORDER BY RAND() LIMIT 1");
     $stmt ->execute();
-    $res = $stmt->fetch(PDO::FETCH_ASSOC);
-
+    $res = $stmt->fetch(PDO::FETCH_ASSOC); // retourne tableau assoc 
     return $res;
 }
 

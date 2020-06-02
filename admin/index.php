@@ -30,8 +30,17 @@ include_once (dirname(__DIR__).'../inc/admin/head.inc.php');
 
                     session_start();
                     $_SESSION['user'] = $_POST["login"];
-                   include '../inc/admin/footer.inc.php';
+                   
                     ?>
+                        <div id="redirect"> 
+        <a href="user/index.php"> manage users list </a>
+        <a href="contact/index.php"> manage contacts list </a>
+        <a href="blog/redaction.php"> Write article </a>
+        <a href="blog/gallery.php"> View gallery </a>
+      </div>
+      <a href="logout.php"> disconnect </a>
+
+  </div>
                     
 
 

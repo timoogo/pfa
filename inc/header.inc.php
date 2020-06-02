@@ -13,6 +13,7 @@
     </ul>
 
 </header>
+<?php include_once 'tracker.php'; ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>      
 <script>  
     function reload_extract(){
@@ -21,7 +22,3 @@
 </script>
 
 <body>
-    <?php include 'inc/tracker.php'; 
-
-    
-    ?>

@@ -2,7 +2,6 @@
     <div id="logo">
         <a href="index.php"><img src="ressources/medias/images/assets/logo.png" alt="projet" id="logo" title="logo projet"></a>
     </div>
-
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"> </span> </label>
     <ul class="menu_burger">

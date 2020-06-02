@@ -11,8 +11,8 @@ CREATE TABLE  `users` (
 ) ENGINE=InnoDB;
 
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'timogo', 'tiimogo@gmail.com', 'mdp', '2020-05-27 12:21:52', '2020-05-27 14:21:52');
+    INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
+    (1, 'timogo', 'tiimogo@gmail.com', 'mdp');
 
 CREATE TABLE `articles` (
 	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
